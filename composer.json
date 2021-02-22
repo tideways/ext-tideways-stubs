@@ -1,0 +1,7 @@
+{
+    "name": "tideways/ext-tideways-stubs",
+    "description": "IDE stubs for Tideways Profiler PHP extension",
+    "type": "library",
+    "license": "BSD-2-Clause",
+    "require": {}
+}
