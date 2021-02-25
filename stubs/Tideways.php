@@ -56,11 +56,13 @@ namespace Tideways {
 
         public static function setServiceName(string $serviceName): void {}
 
-        public static function createSpan(string $category): Span {}
+        public static function createSpan(string $category): Profiler\Span {}
 
         public static function generateServerTimingHeaderValue(): string {}
     }
+}
 
+namespace Tideways\Profiler {
     class Span
     {
         private function __construct() {}
