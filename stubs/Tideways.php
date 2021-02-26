@@ -22,9 +22,12 @@ namespace Tideways {
 
         public static function ignoreTransaction(): void {}
 
-        public static function logFatal(string $message, string $file, int $line, ?string $type = null, ?array $trace = null) {}
+        /**
+         * @param array<string>|null $trace
+         */
+        public static function logFatal(string $message, string $file, int $line, ?string $type = null, ?array $trace = null): void {}
 
-        public static function logException(\Throwable $exception) {}
+        public static function logException(\Throwable $exception): void {}
 
         public static function getTransactionName(): ?string {}
 
@@ -50,6 +53,9 @@ namespace Tideways {
 
         public static function addEventMarker(string $eventName): void {}
 
+        /**
+         * @param mixed $value
+         */
         public static function setCustomVariable(string $name, $value): void {}
 
         public static function currentTraceId(): ?string {}
@@ -69,6 +75,9 @@ namespace Tideways\Profiler {
 
         public function getId(): string {}
 
+        /**
+         * @param array<string,string> $annotations
+         */
         public function annotate(array $annotations): void {}
 
         public function logException(\Throwable $exception): void {}
