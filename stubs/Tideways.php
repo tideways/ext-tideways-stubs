@@ -76,7 +76,7 @@ namespace Tideways\Profiler {
         public function getId(): string {}
 
         /**
-         * @param array<string,string> $annotations
+         * @param array<string,int|string|bool> $annotations
          */
         public function annotate(array $annotations): void {}
 
