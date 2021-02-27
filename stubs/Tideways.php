@@ -54,7 +54,7 @@ namespace Tideways {
         public static function addEventMarker(string $eventName): void {}
 
         /**
-         * @param mixed $value
+         * @param object|string|int|float|bool|null $value
          */
         public static function setCustomVariable(string $name, $value): void {}
 
