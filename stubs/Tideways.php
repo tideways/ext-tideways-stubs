@@ -68,9 +68,12 @@ namespace Tideways {
 
         /** @since tideways 5.5.6 **/
         public static function markPageCacheHit(): void {}
-        
+
         /** @since tideways 5.5.6 **/
         public static function markPageCacheMiss(): void {}
+
+        /** @since tideways 5.5.14 **/
+        public static function setTags(array $tags): void {}
     }
 }
 
