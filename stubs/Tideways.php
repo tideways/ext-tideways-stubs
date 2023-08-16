@@ -65,6 +65,8 @@ namespace Tideways {
         public static function createSpan(string $category): Profiler\Span {}
 
         public static function generateServerTimingHeaderValue(): string {}
+        public static function generateDistributedTracingHeaders(): array {}
+        public static function generateReferencedTracesHeaders(): array {}
 
         /** @since tideways 5.5.6 **/
         public static function markPageCacheHit(): void {}
