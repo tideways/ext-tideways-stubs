@@ -95,4 +95,9 @@ namespace Tideways\Profiler {
 
         public function finish(): void {}
     }
+
+    #[\Attribute(\Attribute::TARGET_METHOD | \Attribute::TARGET_FUNCTION)]
+    class WithSpan
+    {
+    }
 }
