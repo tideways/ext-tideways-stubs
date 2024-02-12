@@ -68,6 +68,9 @@ namespace Tideways {
         public static function generateDistributedTracingHeaders(): array {}
         public static function generateReferencedTracesHeaders(): array {}
 
+        /** @since tideways 5.4.36 **/
+        public static function markAsWebTransaction(): void {}
+        
         /** @since tideways 5.5.6 **/
         public static function markPageCacheHit(): void {}
 
