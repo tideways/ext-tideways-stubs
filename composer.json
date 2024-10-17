@@ -3,5 +3,6 @@
     "description": "IDE stubs for Tideways Profiler PHP extension",
     "type": "library",
     "license": "BSD-2-Clause",
-    "require": {}
+    "require": {},
+    "keywords": ["dev"]
 }
