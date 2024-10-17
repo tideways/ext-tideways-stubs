@@ -3,5 +3,5 @@
 Install with
 
 ```
-composer require tideways/ext-tideways-stubs
+composer require-dev tideways/ext-tideways-stubs
 ```
