@@ -13,10 +13,10 @@ namespace Tideways {
         public static function containsDeveloperTraceRequest(): bool {}
 
         /**
-         * @psalm-param string|array{api_key?: string, service?: string, sample_rate?: int} $options
-         * @param string|array $options
+         * @psalm-param null|string|array{api_key?: string, service?: string, sample_rate?: int} $options
+         * @param null|string|array $options
          */
-        public static function start($options = []): void {}
+        public static function start($options = null): void {}
 
         public static function stop(): void {}
 
